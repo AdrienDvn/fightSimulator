@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <script src="fightSimulator.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fight Simulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fight Simulator</h1>
+      <div class="characters">
+        <div class="character warrior" id="thor">
+          <h2 class="name">Thor</h2>
+          <p class="info">Level: <span id="thorLevel">1</span></p>
+          <p class="info">Health: <span id="thorHealth">350</span></p>
+        </div>
+        <div class="character magician" id="gandalf">
+          <h2 class="name">Gandalf</h2>
+          <p class="info">Level: <span id="gandalfLevel">1</span></p>
+          <p class="info">Health: <span id="gandalfHealth">170</span></p>
+        </div>
+      </div>
+      <div class="log" id="log">
+      </div>
+      <button id="startFight">Start Fight</button>
+    </div>
+    <script src="fightSimulator.js"></script>
+  </body>
 </html>

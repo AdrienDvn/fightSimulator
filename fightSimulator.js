@@ -69,9 +69,11 @@ class Warrior extends Character {
   }
 }
 
+//character examples
 var gandalf = new Magician('Gandalf');
 var thor    = new Warrior('Thor');
 
+//scenario example
 console.log(thor.info);
 console.log(gandalf.info);
 
@@ -81,4 +83,3 @@ console.log(thor.info);
 thor.attack(gandalf);
 console.log(gandalf.info);
 gandalf.specialAttack(thor);
-// console.log(thor.info);
